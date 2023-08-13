@@ -109,20 +109,20 @@ void Fecha::agregarDias(int dias) {
 	}
 }
 std::string Fecha::to_String() {
-	std::string dd;
-	std::string mm;
-	std::string aaaa = std::to_string(_anio);
+	std::string dia;
+	std::string mes;
+	std::string anio = std::to_string(_anio);
 	if (_dia < 10) {
-		dd = "0" + std::to_string(_dia);
+		dia = "0" + std::to_string(_dia);
 	}
 	else {
-		dd = std::to_string(_dia);
+		dia = std::to_string(_dia);
 	}
 	if (_mes < 10) {
-		mm = "0" + std::to_string(_mes);
+		mes = "0" + std::to_string(_mes);
 	}
 	else {
-		mm = std::to_string(_mes);
+		mes = std::to_string(_mes);
 	}
-	return dd + "/" + mm + "/" + aaaa;
+	return dia + "/" + mes + "/" + anio;
 }
