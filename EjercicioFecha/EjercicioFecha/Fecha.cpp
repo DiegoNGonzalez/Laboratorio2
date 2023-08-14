@@ -53,7 +53,7 @@ int Fecha::maximoDiasEnMes(int mes, int anio) {
 		diaMax = 30;
 	}
 	else if (mes == 2) {
-		if (anio % 4 == 0 && (anio % 100 != 0 || anio % 400 == 0)) {
+		if (esBisiesto(anio) ){
 			diaMax = 29;
 		}
 		else {
